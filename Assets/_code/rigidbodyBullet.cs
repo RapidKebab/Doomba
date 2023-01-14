@@ -7,6 +7,7 @@ public class rigidbodyBullet : MonoBehaviour
     public float forceForward=50;
     Rigidbody rb;
     public float damage = 50;
+    public bool destroyOnHit = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,7 @@ public class rigidbodyBullet : MonoBehaviour
         {
             otherObjectHealth.takeDamage(damage);
         }
-        Destroy(this.gameObject);
+        if(destroyOnHit)
+            Destroy(this.gameObject);
     }
 }

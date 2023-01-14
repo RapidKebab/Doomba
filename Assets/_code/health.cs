@@ -13,15 +13,18 @@ public class health : MonoBehaviour
     void Start()
     {
         currentHP = maxHP;
-        HPText.text = currentHP.ToString();
+        if (HPText != null)
+            HPText.text = currentHP.ToString();
         death = GetComponent<death>();
         if (death ==null)
             death= gameObject.AddComponent<roombaDeath>();
     }
 
     public void takeDamage(float d) {
+        Debug.Log("took" + d.ToString());
         currentHP -= d;
-        HPText.text = currentHP.ToString();
-        if (currentHP < 0) { death.Die(); }
+        if(HPText!=null)
+            HPText.text = currentHP.ToString();
+        if (currentHP <= 0) { death.Die(); }
     }
 }

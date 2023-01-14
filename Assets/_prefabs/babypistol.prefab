@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3211871764132608190}
   - component: {fileID: 825894945614974068}
   - component: {fileID: -8823261636753468293}
+  - component: {fileID: 344653133}
   m_Layer: 0
   m_Name: babypistol
   m_TagString: Untagged
@@ -105,6 +106,26 @@ MonoBehaviour:
   Muzzle: {fileID: 6183237750433442072}
   Bullet: {fileID: 3771045054513111801, guid: 387bdf76b91b46a4da2f6cf5b3e100f1, type: 3}
   shotGap: 0.1
+  auto: 1
+--- !u!95 &344653133
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186372376112426401}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d874c17cd791874b8b3aefb56f5f867, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1738870739709988993
 GameObject:
   m_ObjectHideFlags: 0
