@@ -16,8 +16,8 @@ public class health : MonoBehaviour
         if (HPText != null)
             HPText.text = currentHP.ToString();
         death = GetComponent<death>();
-        if (death ==null)
-            death= gameObject.AddComponent<roombaDeath>();
+        if (death == null)
+            death = gameObject.AddComponent<roombaDeath>();
     }
 
     public void takeDamage(float d) {
